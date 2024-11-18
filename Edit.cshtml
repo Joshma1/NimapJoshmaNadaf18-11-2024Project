@@ -1,0 +1,12 @@
+@model Nimap.Models.Product
+
+<h2>Edit Product</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+    <div class="form-group">
+        <label for="ProductName">Product Name</label>
+        <input type="text" class="form-control" id="ProductName" name="ProductName" value="@Model.ProductName" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
